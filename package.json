@@ -1,0 +1,27 @@
+{
+  "name": "identity-verification-system",
+  "version": "1.0.0",
+  "description": "Web-based identity verification system using document scanning and face comparison",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "download-models": "cd server && npm run download-models",
+    "build": "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "identity",
+    "verification",
+    "face-recognition",
+    "ocr",
+    "document-scanning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
