@@ -1,14 +1,28 @@
 # Identity Verification System
 
-A web-based system for identity verification using document scanning and face comparison.
+A web-based system for identity verification using document scanning and face comparison. It uses OCR to extract the date of birth and performs face recognition to verify if the person holding the ID Proof (say Aadhar) is the same as the one in the selfie. The system also displays a confidence score for the face match and determines if the person is eligible to vote (18+).
+
+## 📌 Problem Statement
+
+Design a system that:
+- Extracts age and face from a simulated Aadhaar card (PDF or image).
+- Compares the Aadhaar photo with a live selfie.
+- Determines whether:
+  - The Aadhaar and selfie belong to the same individual.
+  - The person is 18+ and eligible to vote.
+
+> ⚠️ This is a simulated system using fake/sample Aadhaar data. No real government APIs or UIDAI data are accessed.
+
+---
 
 ## Features
-
+- Upload Aadhaar image or PDF.
 - Extract information from identity documents (Aadhar card)
 - Compare document photo with a live selfie
 - Determine if the document and person match
 - Verify age-based criteria (18+ or not)
 - Display confidence level of face match and document parsing
+- Clean and user-friendly web interface built with React.js.
 
 ## Technology Stack
 
@@ -99,6 +113,14 @@ identity-verification-system/
 - No personal data is permanently stored in the system
 - For a production environment, implement secure HTTPS connections
 - Add proper authentication and authorization mechanisms
+
+## 📽️ Demo & Presentation
+
+- 🎬 **[Watch Demo Video](https://drive.google.com/file/d/1OH6dsoad1WaaAGtuU3CkAtXSfCLWGIFB/view?usp=sharing )**  
+- 📊 **[View Presentation Slides](https://drive.google.com/file/d/1lJxm9jtmLrSjBRyBxAjjyF3J26n4Ibct/view?usp=sharing)**
+
+> _These links showcase the working of the Identity Verification System and summarize the overall architecture and features._
+
 
 ## Future Enhancements
 
